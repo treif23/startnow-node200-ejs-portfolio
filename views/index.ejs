@@ -1,0 +1,108 @@
+<html>
+
+<head>
+    <title> Tommy's Portfolio </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <img src="https://www.hertzpageo.com/img/large/newzealand_hero.jpg" width="1140px" height="400px" /> 
+        </div>
+
+        <div class="row">
+            <div id="photo" class="col-2">
+                <img src="../img/IMG_3913.jpg" height="350px" width="263px" />
+            </div>
+            <div class="col-9" id="intro">
+                <div id="hello">
+                    Hello! I am
+                    <%= person.firstName %>
+                        <%= person.lastName %>
+                            and welcome to my personal portfolio!
+                </div>
+                <div id="info">
+                    I'm originally from a small town in central California called Solvang, I moved back down to San Diego 2 years ago in search
+                    of a new career. I am very motivated, and hungry for knowledge.
+
+                    <div class="break">Previously, I had been working mostly in the oil trading industry, but I decided that it wasn't what
+                        I was looking for in a career, and wanted to find a new and exciting one. After many conversations
+                        with friends and family, I decided that I wanted to pursue a career in software development! This
+                        is what led me to become a student at Origin Code Academy. I find many of the different coding languages
+                        fascinating, and always am interested in what changes and improvements will come to them next and
+                        learning how to use best utilize them.
+                    </div>
+
+                    <div class="break">
+                        If I am not working on improving my coding, I like to be outside playing sports. But, if I have the time available, my favorite
+                        thing to do is travel.
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div>
+            <div id="list1">
+                <div id="list2">
+                    <u>Here are the subjects that I have covered during my time at Origin Code Academy!</u>
+                </div>
+                <ul id="list">
+                    <li>
+                        <b>Javascript</b> - A cross-platform, object-oriented scripting language used to make webpages interactive</li>
+                    <li>
+                        <b>CSS (Cascading Style Sheets)</b> - Is a style sheet language used for describing the presentation
+                        of a document written in a markup language like HTML.</li>
+                    <li>
+                        <b>HTML</b> - Hypertext Markup Language, a standardized system for tagging text files to achieve font,
+                        color, graphic, and hyperlink effects on World Wide Web pages.</li>
+                    <li>
+                        <b>jQuery</b> - Is a cross-platform JavaScript library designed to simplify the client-side scripting
+                        of HTML.</li>
+                    <li>
+                        <b>Node.js</b> - Is an open-source, cross-platform JavaScript run-time environment that executes JavaScript
+                        code server-side.</li>
+                    <li>
+                        <b>Express</b> - Is a web application framework for Node.js, released as free and open-source software
+                        under the MIT License. It is designed for building web applications and APIs.</li>
+                    <li>
+                        <b>React</b> - Is a declarative, efficient, and flexible JavaScript library for building user interfaces.</li>
+                    <li>
+                        <b>MySQL</b> - Is an open-source relational database management system.</li>
+                    <li>
+                        <b>MongoDB</b> - Is a free and open-source cross-platform document-oriented database program. Classified
+                        as a NoSQL database program, MongoDB uses JSON-like documents with schemas.</li>
+                    <li>
+                        <b>Redux</b> - Is an open-source JavaScript library for managing application state. It is most commonly
+                        used with libraries such as React or Angular for building user interfaces </li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <div class="col-12" id="github">
+                Feel free to check out on GitHub or Heroku the projects I've completed so far!<br> </br>
+                <a href='https://github.com/treif23'style="color : blue">
+                    <br id="link">Projects on GitHub.com</br>
+                </a>
+                <a href='https://tr-vstda.herokuapp.com/'style="color : blue">
+                    <br>VSTDA on Heroku!</br>
+                </a>
+                <a href='https://tr-change-calculator.herokuapp.com/'style="color : blue">
+                    <br>Change Calculator on Heroku!</br>
+                </a>
+            </div>
+        </div>
+<div class="col-12" id="contact">
+    Have any questions? Please contact me by filling out the section below!
+</div>
+    </div>
+</body>
+
+</html>
