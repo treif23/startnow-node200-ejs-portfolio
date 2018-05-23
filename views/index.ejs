@@ -15,7 +15,7 @@
 <body>
     <div class="container">
         <div>
-            <img src="https://www.hertzpageo.com/img/large/newzealand_hero.jpg" width="1140px" height="400px" /> 
+            <img src="https://www.hertzpageo.com/img/large/newzealand_hero.jpg" width="1140px" height="400px" />
         </div>
 
         <div class="row">
@@ -33,12 +33,12 @@
                     I'm originally from a small town in central California called Solvang, I moved back down to San Diego 2 years ago in search
                     of a new career. I am very motivated, and hungry for knowledge.
 
-                    <div class="break">Previously, I had been working mostly in the oil trading industry, but I decided that it wasn't what
-                        I was looking for in a career, and wanted to find a new and exciting one. After many conversations
+                    <div class="break">I received my college degree in Economics from SDSU, and I previously had been working mostly in the oil trading industry. However I decided that it wasn't what
+                        I was looking for as a career, and wanted to find a new and exciting one. After many conversations
                         with friends and family, I decided that I wanted to pursue a career in software development! This
                         is what led me to become a student at Origin Code Academy. I find many of the different coding languages
-                        fascinating, and always am interested in what changes and improvements will come to them next and
-                        learning how to use best utilize them.
+                        and libraries fascinating, and always am interested in what changes and improvements will come to
+                        them next and learning how to best utilize them.
                     </div>
 
                     <div class="break">
@@ -64,44 +64,68 @@
                         <b>HTML</b> - Hypertext Markup Language, a standardized system for tagging text files to achieve font,
                         color, graphic, and hyperlink effects on World Wide Web pages.</li>
                     <li>
-                        <b>jQuery</b> - Is a cross-platform JavaScript library designed to simplify the client-side scripting
+                        <b>jQuery</b> - A cross-platform JavaScript library designed to simplify the client-side scripting
                         of HTML.</li>
                     <li>
-                        <b>Node.js</b> - Is an open-source, cross-platform JavaScript run-time environment that executes JavaScript
+                        <b>Node.js</b> - An open-source, cross-platform JavaScript run-time environment that executes JavaScript
                         code server-side.</li>
                     <li>
-                        <b>Express</b> - Is a web application framework for Node.js, released as free and open-source software
+                        <b>Express</b> - A web application framework for Node.js, released as free and open-source software
                         under the MIT License. It is designed for building web applications and APIs.</li>
                     <li>
-                        <b>React</b> - Is a declarative, efficient, and flexible JavaScript library for building user interfaces.</li>
+                        <b>React</b> - A declarative, efficient, and flexible JavaScript library for building user interfaces.</li>
                     <li>
-                        <b>MySQL</b> - Is an open-source relational database management system.</li>
+                        <b>MySQL</b> - An open-source relational database management system.</li>
                     <li>
-                        <b>MongoDB</b> - Is a free and open-source cross-platform document-oriented database program. Classified
+                        <b>MongoDB</b> - A free and open-source cross-platform document-oriented database program. Classified
                         as a NoSQL database program, MongoDB uses JSON-like documents with schemas.</li>
                     <li>
-                        <b>Redux</b> - Is an open-source JavaScript library for managing application state. It is most commonly
+                        <b>Redux</b> - An open-source JavaScript library for managing application state. It is most commonly
                         used with libraries such as React or Angular for building user interfaces </li>
                 </ul>
             </div>
         </div>
         <div>
             <div class="col-12" id="github">
-                Feel free to check out on GitHub or Heroku the projects I've completed so far!<br> </br>
-                <a href='https://github.com/treif23'style="color : blue">
+                    Visit my LinkedIn page for my previous work experience! Also, feel free to check out GitHub or Heroku for the projects I've completed so far!
+                <br> </br>
+                <a href='https://www.linkedin.com/in/thomas-reif-4841227b/' style="color : white">
+                    <br id="link">LinkedIn Profile</br>
+                </a>
+
+                <a href='https://github.com/treif23' style="color : white">
                     <br id="link">Projects on GitHub.com</br>
                 </a>
-                <a href='https://tr-vstda.herokuapp.com/'style="color : blue">
+                <a href='https://tr-vstda.herokuapp.com/' style="color : white">
                     <br>VSTDA on Heroku!</br>
                 </a>
-                <a href='https://tr-change-calculator.herokuapp.com/'style="color : blue">
+                <a href='https://tr-change-calculator.herokuapp.com/' style="color : white">
                     <br>Change Calculator on Heroku!</br>
                 </a>
             </div>
         </div>
-<div class="col-12" id="contact">
-    Have any questions? Please contact me by filling out the section below!
-</div>
+        <div class="col-12" id="contact" style="color: black">
+            Have any questions? Please contact me by filling out the section below!
+            <form action="/thanks" method="POST">
+                <div class="form-group">
+                    <label for="firstName" id="label" style="color: white">First Name</label>
+                    <input type="text" class="form-control" name="firstName" id="fName" placeholder="First Name">
+                </div>
+                <div class="form-group">
+                    <label for="lastName" style="color: white">Last Name</label>
+                    <input type="text" class="form-control" name="lastName" id="lName" placeholder="Last Name">
+                </div>
+                <div class="form-group">
+                    <label for="email" style="color: white">Email address</label>
+                    <input type="email" class="form-control" id="email" placeholder="name@email.com">
+                </div>
+                <div class="form-group">
+                    <label for="message" style="color: white">Message</label>
+                    <textarea class="form-control" id="message" rows="3"></textarea>
+                </div>
+                <input type="submit" class="btn btn-primary"></input>
+            </form>
+        </div>
     </div>
 </body>
 
