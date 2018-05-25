@@ -4,8 +4,7 @@
   "description": "\"My personal portfolio\",",
   "main": "index.js",
   "scripts": {
-    "build": "npm install",
-    "start": "npm run build && node server.js",
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
