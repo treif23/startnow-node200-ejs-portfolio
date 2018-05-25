@@ -1,8 +1,8 @@
 
 body {
-    background: #5433FF;  /* fallback for old browsers */
+    background: #5433FF;  
 background: -webkit-linear-gradient(to left, rgb(13, 193, 238), #20BDFF, #5433FF);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, rgb(18, 231, 247), #20BDFF, rgb(30, 1, 172)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: linear-gradient(to left, rgb(13, 229, 245), #20BDFF, rgb(22, 1, 129)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 
   }
@@ -76,7 +76,7 @@ border-width: 1px;
     padding-top: 5px;
 }
 
-#contact{
+#contact1{
     padding-top: 15px;
     margin-bottom: 15px;
     border-style: solid;

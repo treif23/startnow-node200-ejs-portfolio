@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.js"></script>
+
 </head>
 
 <body>
@@ -33,12 +34,13 @@
                     I'm originally from a small town in central California called Solvang, I moved back down to San Diego 2 years ago in search
                     of a new career. I am very motivated, and hungry for knowledge.
 
-                    <div class="break">I received my college degree in Economics from SDSU, and I previously had been working mostly in the oil trading industry. However I decided that it wasn't what
-                        I was looking for as a career, and wanted to find a new and exciting one. After many conversations
-                        with friends and family, I decided that I wanted to pursue a career in software development! This
-                        is what led me to become a student at Origin Code Academy. I find many of the different coding languages
-                        and libraries fascinating, and always am interested in what changes and improvements will come to
-                        them next and learning how to best utilize them.
+                    <div class="break">I received my college degree in Economics from SDSU, and I previously had been working mostly in the
+                        oil trading industry. However I decided that it wasn't what I was looking for as a career, and wanted
+                        to find a new and exciting one. After many conversations with friends and family, I decided that
+                        I wanted to pursue a career in software development! This is what led me to become a student at Origin
+                        Code Academy. I find many of the different coding languages and libraries fascinating. I'm always
+                        interested in what changes and improvements will come to them next and learning how to best utilize
+                        them.
                     </div>
 
                     <div class="break">
@@ -56,16 +58,16 @@
                 </div>
                 <ul id="list">
                     <li>
-                        <b>Javascript</b> - A cross-platform, object-oriented scripting language used to make webpages interactive</li>
+                        <b>Javascript</b> - A cross-platform, object-oriented scripting language used to make webpages interactive.</li>
                     <li>
                         <b>CSS (Cascading Style Sheets)</b> - Is a style sheet language used for describing the presentation
                         of a document written in a markup language like HTML.</li>
                     <li>
-                        <b>HTML</b> - Hypertext Markup Language, a standardized system for tagging text files to achieve font,
+                        <b>HTML (Hypertext Markup Language)</b> - A standardized system for tagging text files to achieve font,
                         color, graphic, and hyperlink effects on World Wide Web pages.</li>
                     <li>
-                        <b>jQuery</b> - A cross-platform JavaScript library designed to simplify the client-side scripting
-                        of HTML.</li>
+                        <b>jQuery</b> - A cross-platform JavaScript library designed to simplify the client-side scripting of
+                        HTML.</li>
                     <li>
                         <b>Node.js</b> - An open-source, cross-platform JavaScript run-time environment that executes JavaScript
                         code server-side.</li>
@@ -81,13 +83,14 @@
                         as a NoSQL database program, MongoDB uses JSON-like documents with schemas.</li>
                     <li>
                         <b>Redux</b> - An open-source JavaScript library for managing application state. It is most commonly
-                        used with libraries such as React or Angular for building user interfaces </li>
+                        used with libraries such as React or Angular for building user interfaces. </li>
                 </ul>
             </div>
         </div>
         <div>
             <div class="col-12" id="github">
-                    Visit my LinkedIn page for my previous work experience! Also, feel free to check out GitHub or Heroku for the projects I've completed so far!
+                Visit my LinkedIn page for more about my previous work experience! Also, feel free to check out GitHub or Heroku for the projects I've
+                completed so far!
                 <br> </br>
                 <a href='https://www.linkedin.com/in/thomas-reif-4841227b/' style="color : white">
                     <br id="link">LinkedIn Profile</br>
@@ -104,29 +107,39 @@
                 </a>
             </div>
         </div>
-        <div class="col-12" id="contact" style="color: black">
+        <div class="col-12" id="contact1" style="color: black">
             Have any questions? Please contact me by filling out the section below!
-            <form action="/thanks" method="POST">
+            <form action="/thanks" name="submit-to-google-sheet" id="contact" method="POST">
                 <div class="form-group">
                     <label for="firstName" id="label" style="color: white">First Name</label>
-                    <input type="text" class="form-control" name="firstName" id="fName" placeholder="First Name">
+                    <input type="text" class="form-control" name="firstName" id="firstName" placeholder="First Name">
                 </div>
                 <div class="form-group">
                     <label for="lastName" style="color: white">Last Name</label>
-                    <input type="text" class="form-control" name="lastName" id="lName" placeholder="Last Name">
+                    <input type="text" class="form-control" name="lastName" id="lastName" placeholder="Last Name">
                 </div>
                 <div class="form-group">
                     <label for="email" style="color: white">Email address</label>
-                    <input type="email" class="form-control" id="email" placeholder="name@email.com">
+                    <input type="email" class="form-control" id="email" name="email" placeholder="name@email.com">
                 </div>
                 <div class="form-group">
                     <label for="message" style="color: white">Message</label>
-                    <textarea class="form-control" id="message" rows="3"></textarea>
+                    <textarea class="form-control" id="message" name="message" rows="3"></textarea>
                 </div>
-                <input type="submit" class="btn btn-primary"></input>
+                <button type="submit" class="btn btn-primary">Send</button>
             </form>
         </div>
     </div>
+    <script>  
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzmANY2gjEoiFuwGL8aqSLoCsvbdDNQ6O6jZdjYt18XUFCIvE8/exec'
+        const form = document.forms['contact']
+        form.addEventListener('submit', e => {
+           
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => console.log('Success!', response))
+                .catch(error => console.error('Error!', error.message))
+        });  
+    </script>
 </body>
 
 </html>

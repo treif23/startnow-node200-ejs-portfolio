@@ -13,28 +13,37 @@
 </head>
 
 <body>
-  <div>
-    <form action="/thanks" method="POST">
+  <div class="col-6">
+    <form action="/thanks" method="POST" id="contact" name="submit-to-google-sheet">
 
       <div class="form-group">
-        <label for="firstName">First Name</label>
+        <label for="firstName" style="color: white">First Name</label>
         <input type="text" class="form-control" name="firstName" id="firstName" placeholder="First Name">
-      </div>
+      </div>  
       <div class="form-group">
-        <label for="lastName">Last Name</label>
+        <label for="lastName" style="color: white">Last Name</label>
         <input type="text" class="form-control" name="lastName" id="lastName" placeholder="Last Name">
       </div>
       <div class="form-group">
-        <label for="email">Email address</label>
+        <label for="email" style="color: white">Email address</label>
         <input type="email" class="form-control" name="email" id="email" placeholder="name@email.com">
       </div>
       <div class="form-group">
-        <label for="message">Message</label>
-        <textarea class="form-control" id="message" rows="3"></textarea>
+        <label for="message" style="color: white">Message</label>
+        <textarea class="form-control" id="message" name="message" rows="3"></textarea>
       </div>
-      <input type="submit" />
+      <button type="submit" class="btn btn-primary">Send</button>
     </form>
   </div>
+  <script>  
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbzmANY2gjEoiFuwGL8aqSLoCsvbdDNQ6O6jZdjYt18XUFCIvE8/exec'
+      const form = document.forms['contact']
+      form.addEventListener('submit', e => {
+         
+          fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+              .then(response => console.log('Success!', response))
+              .catch(error => console.error('Error!', error.message))
+      });  
+  </script>
 </body>
-
 </html>
