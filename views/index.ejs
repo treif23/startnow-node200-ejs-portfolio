@@ -67,7 +67,8 @@
                         color, graphic, and hyperlink effects on World Wide Web pages.</li>
                     <li>
                         <b>jQuery</b> - A cross-platform JavaScript library designed to simplify the client-side scripting of
-                        HTML.</li>
+                        HTML.
+                    </li>
                     <li>
                         <b>Node.js</b> - An open-source, cross-platform JavaScript run-time environment that executes JavaScript
                         code server-side.</li>
@@ -89,8 +90,8 @@
         </div>
         <div>
             <div class="col-12" id="github">
-                Visit my LinkedIn page for more about my previous work experience! Also, feel free to check out GitHub or Heroku for the projects I've
-                completed so far!
+                Visit my LinkedIn page for more about my previous work experience! Also, feel free to check out GitHub or Heroku for the
+                projects I've completed so far!
                 <br> </br>
                 <a href='https://www.linkedin.com/in/thomas-reif-4841227b/' style="color : white">
                     <br id="link">LinkedIn Profile</br>
@@ -99,11 +100,11 @@
                 <a href='https://github.com/treif23' style="color : white">
                     <br id="link">Projects on GitHub.com</br>
                 </a>
-                <a href='https://tr-vstda.herokuapp.com/' style="color : white">
-                    <br>VSTDA on Heroku!</br>
+                <a href='https://tr-weather-app.herokuapp.com/' style="color : white">
+                    <br>Weather App on Heroku!</br>
                 </a>
-                <a href='https://tr-change-calculator.herokuapp.com/' style="color : white">
-                    <br>Change Calculator on Heroku!</br>
+                <a href='https://tr-movie-finder.herokuapp.com/#/' style="color : white">
+                    <br>Movie Finder on Heroku!</br>
                 </a>
             </div>
         </div>
@@ -134,7 +135,7 @@
         const scriptURL = 'https://script.google.com/macros/s/AKfycbzmANY2gjEoiFuwGL8aqSLoCsvbdDNQ6O6jZdjYt18XUFCIvE8/exec'
         const form = document.forms['contact']
         form.addEventListener('submit', e => {
-           
+
             fetch(scriptURL, { method: 'POST', body: new FormData(form) })
                 .then(response => console.log('Success!', response))
                 .catch(error => console.error('Error!', error.message))

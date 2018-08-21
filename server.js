@@ -15,25 +15,7 @@ app.use(bodyParser.urlencoded({ extended: true }))
 
 app.set('views', './views');
 
-
-
 app.set('view engine', 'ejs');
-
-
-
-// axios({
-//     method: 'POST',
-//     url: 'https://sheets.googleapis.com/v4/spreadsheets/1DKtsHTzZ9HhakZdn7HG9yg878MAWQ4y8EZoQ2bhph30/values/A1:append?includeValuesInResponse=false&insertDataOption=INSERT_ROWS&responseDateTimeRenderOption=SERIAL_NUMBER&responseValueRenderOption=FORMATTED_VALUE&valueInputOption=USER_ENTERED&key={1013966049047-lm4lh8o2nipm2r4ffm7mvo1p0m22t7ht.apps.googleusercontent.com}',
-//     majorDimensions: 'ROWS',
-//     values: {
-//       firstName: '',
-//       lastName: '',
-//       email: '',
-//       message: '',
-//     }
-//   });
-
-
 
 
 app.get('/', (req, res) => {
